@@ -65,3 +65,14 @@
 # junk.clear();
 # print(junk);
 ##########################################
+
+
+# TUPLES
+# Tuples are immutable data structures
+# Iterating over tuples is faster than iterating over a list
+
+# Create an empty tuple
+junk = tuple();
+junk = ('Joe', 'Instructor', 'Awesome');
+print(junk);
+##########################################
