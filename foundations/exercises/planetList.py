@@ -26,16 +26,16 @@ print(planet_list);
 # Iterating over planets
 # Create another list containing tuples. Each tuple will hold the name of a spacecraft that we have launched, and the names of the planet(s) that it has visited, or landed on. (e.g. ('Cassini', 'Jupiter')).
 spacecraft_list = [
-    ('Rover','Mercury'),
-    ('Ascender', 'Venus'),
-    ('Moonman','Earth'),
-    ('Martian', 'Mars'),
-    ('Gas-X', 'Jupiter'),
-    ('Standurn', 'Saturn'),
-    ('Gross', 'Uranus'),
-    ('Sometunes','Neptune')
+    ('Pioneer 10','Mercury'),
+    ('Pioneer 11', 'Venus'),
+    ('Apollo','Earth'),
+    ('Voyager 1', 'Mars'),
+    ('Galileo', 'Jupiter'),
+    ('Juno', 'Saturn'),
+    ('New Horizens', 'Uranus'),
+    ('Pioneer 10','Neptune')
 ];
 
 # Iterate over your list of planets, and inside that loop, iterate over the list of tuples. Print, for each planet, which sattelites have visited.
 for each in spacecraft_list:
-    print('Planet: ' + each[1] + ', Sattelite name: ' + each[0]);
+    print('Planet: ' + each[1] + ', Satellite name: ' + each[0]);
