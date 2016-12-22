@@ -1,7 +1,12 @@
 # Create the Animal class. Create some simple properties and methods on Animal. You are going to create some derived classes that inherit from Animal, so make sure that the properties/methods you add are general to all Animals (e.g. name, height, weight, etc).
 
 class Animal(object):
-
+    '''
+    This is a generic Animal class.
+    Arguments:
+    name --- title, personal name.
+    species --- Binomen.
+    '''
     def __init__(self, name, species):
         self.name = name;
         self.species = species;
@@ -25,7 +30,6 @@ class AilurusFulgens(Animal):
     Class which inherit's from the Animal class.
     Arguments:
     name --- title, personal name.
-    common_name --- common name.
     '''
     def __init__ (self, name):
         Animal.__init__(self, name, "Ailurus-Fulgens");
@@ -46,7 +50,6 @@ class PanPaniscus(Animal):
     Class which inherit's from the Animal class.
     Arguments:
     name --- title, personal name.
-    common_name --- common name.
     '''
     def __init__ (self, name):
         Animal.__init__(self, name, "Pan-Paniscus");
@@ -65,7 +68,6 @@ class PanTroglodytes(Animal):
     Class which inherit's from the Animal class.
     Arguments:
     name --- title, personal name.
-    common_name --- common name.
     '''
     def __init__ (self, name):
         Animal.__init__(self, name, "Pan-Troglodytes");
@@ -84,7 +86,6 @@ class NasalisLarvatus(Animal):
     Class which inherit's from the Animal class.
     Arguments:
     name --- title, personal name.
-    common_name --- common name.
     '''
     def __init__ (self, name):
         Animal.__init__(self, name, "Nasalis-Larvatus");
