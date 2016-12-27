@@ -10,7 +10,7 @@ class Animal:
         self.diet = diet;
 
     def my_diet(self, food):
-        return ("%s eats %s " % (self.name, food));
+        return ("%s eats %s" % (self.name, food));
 
     def __str__(self):
         return "I am a %s and I am a %s" % (self.name, self.diet);
@@ -35,7 +35,8 @@ class AilurusFulgens(Animal):
         # the super key word call the parents method
         # for possible extension of the method in subclasses
         parent_message = super(AilurusFulgens, self).my_diet(food);
-        message = parent_message + "but doesn't digest it very well.";
+        # message = parent_message + "but doesn't digest it very well.";
+        message = ' '.join([parent_message, "but doesn't digest it very well."]);
         return message;
 
     def __str__(self):
