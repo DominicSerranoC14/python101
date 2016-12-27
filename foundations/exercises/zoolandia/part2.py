@@ -42,7 +42,20 @@ class AilurusFulgens(Animal):
         return "I am a %s and I am a %s." % (self.name, self.diet);
     ##########################################
 
-# Instantiate new Animal
+
+# Constructors
+# Create a class for each of your animals. The class should, at the very least, set the initial name of all animals of that type to a name of your choosing.
+
+# class RedPanda(AilurusFulgens):
+#     def __init__(self, name):
+#         super().__init__(name);
+    ##########################################
+
+# myPanda = RedPanda();
+# print(myPanda);
+# print(myPanda.name);
+
+# Instantiate new animal
 rhino = Animal('White Rhino', 'Vegetarian');
 print(rhino);
 
@@ -50,16 +63,3 @@ print(rhino);
 red_panda = AilurusFulgens('Vegetarian');
 print(red_panda);
 print(red_panda.my_diet('pinecones'));
-
-
-# Constructors
-#
-# Create a class for each of your animals. The class should, at the very least, set the initial name of all animals of that type to a name of your choosing.
-#
-# class MyAnimal(speciesClass):
-#     def __init__(self)
-#         self.name = "Moopsie"
-# Use print() to output the name of each of your animal instances.
-#
-# animalInstance = MyAnimal()
-# print(animalInstance.name)
