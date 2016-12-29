@@ -63,7 +63,7 @@ class Alphabits:
         Alerts user that game is about to start.
         '''
         print('Alphabits is about to begin!');
-        print('Please enter each letter of the alphabit one at a time.\n');
+        print('Please enter each letter of the alphabit one at a time.');
 
     def determine_gameover(self):
         # Upon completing the task (entering in all 26 letters), the user should receive some gratifying message like "Congratulations"
@@ -79,7 +79,7 @@ class Alphabits:
         """
 
         # Alert the user to which letter they are on
-        print('What is the ' + self.list_length_str() + ' letter of the alphabet?');
+        print('\nWhat is the ' + self.list_length_str() + ' letter of the alphabet?');
         user_choice = input("> ");
 
         # Create a non-letter "Easter egg" character that will display the current list of successfully input letters (but will not add itself to the list!) which calls the the return_list method.
@@ -93,10 +93,10 @@ class Alphabits:
             print('Correct answers: ' + str(self.list_length() + 1));
             self.add_char(user_choice);
             self.determine_gameover();
-
         else:
             # After each unsuccessful input, display a helpful message explaining why the input was unsuccessful (e.g. 'not a letter', 'duplicate letter', etc.)
             self.handle_incorrect(user_choice);
+            self.game_play();
 
     ##########################################
 
